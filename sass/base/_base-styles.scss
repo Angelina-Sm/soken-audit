@@ -31,9 +31,29 @@ img {
 .list {
     list-style: none;
 }
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+}
+.text {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+}
 
 .container {
-    width: 100%;
+    // width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto auto;
@@ -63,6 +83,7 @@ img {
 .section {
     padding-bottom: 94px;
     @media screen and (max-width: 1199px){
-        padding-bottom: 60px;
+        padding-bottom: 40px;
+       
     }
 }

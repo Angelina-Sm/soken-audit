@@ -31,8 +31,30 @@ img {
   list-style: none;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto auto;
@@ -71,7 +93,7 @@ img {
 }
 @media screen and (max-width: 1199px) {
   .section {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
 }
 
@@ -88,4 +110,188 @@ img {
 .header-link__img {
   width: 80px;
   height: 20px;
+}
+
+.hero {
+  background-color: #1b2360;
+  padding-bottom: 20px;
+}
+
+.hero__container {
+  padding-top: 50px;
+}
+
+.hero-part1__title {
+  padding-left: 20px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+.hero-part2__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: aqua;
+}
+
+.hero-projekt__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: white;
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+.hero__github {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-top: 70px;
+  color: white;
+}
+
+.hero-github__qr {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.hero__date {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: white;
+  margin-top: 15px;
+}
+
+.hero-web__fiex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.hero__web {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.hero-web__link {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin-left: 5px;
+}
+
+.disclaimer__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.disclaimer__text {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.procedure__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.procedure__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.procedure__list {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.procedure__subitem {
+  padding-left: 20px;
+}
+
+.terminology__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.terminology__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.terminology__list {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.detals__data {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  word-break: break-all;
+}
+
+.details__item {
+  margin-top: 5px;
+}
+
+.audit-details__item {
+  margin-top: 5px;
+}
+
+.audit-details__img {
+  width: 70px;
+  height: 70px;
+}
+
+.audit-details__data {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
 }/*# sourceMappingURL=main.css.map */
