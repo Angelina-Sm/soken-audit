@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <nav class="header__nav">
+                <a href="https://soken.io/" class="header__link"> <img class="header-link__img" src="./images/Logo-s.png" alt=""></a>
+            </nav>
+        </div>
+       
+    </header>
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <h1>Smart contract <br>security audit</h1>
+                <h2>Masrelic</h2>
+                <p>Scan and check this report <br>was posted at Soken Github</p>
+                <img src="./images/qrcode-Masrelic.png" alt="">
+                <p>August, 2022</p>
+                <p>Website:</p> <a href="https://soken.io/">soken.io</a>
+            </div>
+
+        </section>
+        <section class="Contents">
+            <div class="container">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li>Table of Contents	2</li>
+                    <li>Disclaimer	3</li>
+                    <li>Procedure	4</li>
+                    <li>Terminology	5</li>
+                    <li>Limitations	5</li>
+                    <li>Basic Security Recommendation	5</li>
+                    <li>Token Contract Details for 24.08.2022	6</li>
+                    <li>Audit Details	6</li>
+                    <li>Social Profiles	7</li>
+                    <li>Token Analytics	7</li>
+                    <li>RELIC Token Distribution	8</li>
+                    <li>Project Website Overview	9</li>
+                    <li>Project Website SSL Certification	9</li>
+                    <li>Project Website Optimization for Desktop	10</li>
+                    <li>Project Website Optimization for Mobile	10</li>
+                    <li>Whitepaper of the project	11</li>
+                    <li>Vulnerabilities checking	12</li>
+                    <li>Security Issues	13</li>
+                    <li>Conclusion	15</li>
+                    <li>Soken Contact Info	16</li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="Disclaimer">
+            <h2>Disclaimer</h2>
+            <p>
+                This is a comprehensive report based on our automated and manual examination of cybersecurity vulnerabilities and framework flaws. We took into consideration smart contract based algorithms, as well.  Reading the full analysis report is essential to build your understanding of project’s security level. It is crucial to take note, though we have done our best to perform this analysis and report, that you should not rely on the our research and cannot claim what it states or how we created it. Before making any judgments, you have to conduct your own independent research.  We will discuss this in more depth in the following disclaimer - please read it fully.
+
+                DISCLAIMER: You agree to the terms of this disclaimer by reading this report or any portion thereof. Please stop reading this report and remove and delete any copies of this report that you download and/or print if you do not agree to these conditions. This report is for non-reliability information only and does not represent investment advice. No one shall be entitled to depend on the report or its contents, and Soken and its affiliates shall not be held responsible to you or anyone else, nor shall Soken provide any guarantee or representation to any person with regard to the accuracy or integrity of the report. Without any terms, warranties or other conditions other than as set forth in that exclusion and Soken excludes hereby all representations, warrants, conditions and other terms (including, without limitation, guarantees implied by the law of satisfactory quality, fitness for purposes and the use of reasonable care and skills). The report is provided as "as is" and does not contain any terms and conditions. Except as legally banned, Soken disclaims all responsibility and responsibilities and no claim against Soken is made to any amount or type of loss or damages (without limitation, direct, indirect, special, punitive, consequential or pure economic loses or losses) that may be caused by you or any other person, or any damages or damages, including without limitations (whether innocent or negligent).
+
+                Security analysis is based only on the smart contracts. No applications or operations were reviewed for security. No product code has been reviewed.
+            </p>
+
+        </section>
+        <section class="Procedure">
+            <h2>Procedure</h2>
+            <h3>Our analysis contains following steps:</h3>
+            <ul>
+                <li>Project Analysis;</li>
+                <li>
+                    <ul>Manual analysis of smart contracts: 
+                        <li>Deploying smart contracts on any of the network(Ropsten/Rinkeby) using Remix IDE</li>
+                        <li>Hashes of all transaction will be recorded</li>
+                        <li>Behaviour of functions and gas consumption is noted, as well.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>Unit Testing:
+                        <li>Smart contract functions will be unit tested on multiple parameters and under multiple conditions to ensure that all paths of functions are functioning as intended. </li>
+                        <li>In this phase intended behaviour of smart contract is verified.</li>
+                        <li>In this phase, we would also ensure that smart contract functions are not consuming unnecessary gas.</li>
+                        <li>Gas limits of functions will be verified in this stage.</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>Automated Testing:
+                        <li>Mythril</li>
+                        <li>Oyente</li>
+                        <li>Manticore</li>
+                        <li>Solgraph</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Terminology</h2>
+            <h3>We categorize the finding into 4 categories based on their vulnerability:</h3>
+            <ul>
+                <li>Low-severity issue — less important, must be analyzed</li>
+                <li>Medium-severity issue — important, needs to be analyzed and fixed</li>
+                <li>High-severity issue —important, might cause vulnerabilities, must be analyzed and fixed</li>
+                <li>Critical-severity issue —serious bug causes, must be analyzed and fixed.</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>Limitations</h2>
+            <p>The security audit of Smart Contract cannot cover all vulnerabilities. Even if no vulnerabilities are detected in the audit, there is no guarantee that future smart contracts are safe. Smart contracts are in most cases safeguarded against specific sorts of attacks. In order to find as many flaws as possible, we carried out a comprehensive smart contract audit. Audit is a document that is not legally binding and guarantees nothing. </p>
+        </section>
+        <section>
+            <h2>Basic Security Recommendation</h2>
+            <p>Unlike hardware and paper wallets, hot wallets are connected to the internet and store private keys online, which exposes them to greater risk. If a company or an individual holds significant amounts of cryptocurrency in a hot wallet, they should consider using MultiSig addresses. Wallet security is enhanced when private keys are stored in different locations and are not controlled by a single entity. </p>
+            <p>More info: </p> <a href="https://medium.com/coinmonks/guide-to-using-the-gnosis-multisig-wallet-eth-e76979741162 ">https://medium.com/coinmonks/guide-to-using-the-gnosis-multisig-wallet-eth-e76979741162 </a>
+        </section>
+        <section>
+            <h2>Token Contract Details for 24.08.2022</h2>
+            <ul>
+                <li>Contract Name: <span>MasRelic</span></li>
+                <li>Deployed address:<span>0x77132Bb08B02a7a87732ec289EFaB45edF49884F</span></li></li>
+                <li>Total Supply:<span>1,000,000,000</span></li></li>
+                <li>Token Tracker:<span>RELIC</span></li></li>
+                <li>Decimals:<span>18</span></li></li>
+                <li>Token holders:<span>61</span></li></li>
+                <li>Transactions count: <span>1410</span></li></li>
+                <li>Top 100 holders dominance: <span>100.00%</span></li></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Audit Details</h2>
+            <ul>
+                <li><img src="" alt=""></li>
+                <li>Project Name: <span>Masrelic</span></li>
+                <li>Language: <span>Solidity</span></li>
+                <li>Compiler Version: <span>v0.8.10</span></li>
+                <li>Blockchain: <span>Ethereum</span></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Social Profiles</h2>
+            <ul>
+                <li>Project Website: <a href="https://www.masrelic.com/">https://www.masrelic.com/</a></li>
+                <li>Project Twitter: <a href="https://twitter.com/MasRelic">https://twitter.com/MasRelic</a></li>
+                <li>Project Telegram: <a href="https://t.me/MasRelic_EN">https://t.me/MasRelic_EN</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Token Analytics</h2>
+            <img src="./images/Analytics.png" alt="">
+        </section>
+        <section>
+            <h2>RELIC Token Distribution</h2>
+            <img src="./images/Distribution.png" alt="">
+        </section>
+        <section>
+            <h2>RELIC Top 10 Holders</h2>
+            <img src="./images/holders.png" alt="">
+        </section>
+        <section>
+            <h2>Project Website Overview</h2>
+            <img src="./images/website-overview.png" alt="">
+            <ul>
+                <li> 
+                    <svg class="" width="15" height="15">
+                     <use href="./icons.svg/symbol-defs.svg#icon-checkbox"></use>
+                    </svg> JavaScript errors hasn’t been found.
+                </li>
+                <li>
+                    <svg class="" width="15" height="15">
+                        <use href="./icons.svg/symbol-defs.svg#icon-checkbox"></use>
+                    </svg>
+                    Malware pop-up windows hasn’t been detected.
+                </li>
+                <li>
+                    <svg class="icon-list__icon" width="15" height="15">
+                        <use href="./icons.svg/symbol-defs.svg#icon-checkbox"></use>
+                    </svg>
+                    No issues with loading elements, code, or stylesheets.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Project Website SSL Certification</h2>
+            <img src="./images/SSL-Certification.png" alt="">
+        </section>
+        <section>
+            <h2>Project Website Optimization for Desktop</h2>
+            <img src="./images/Website-Optimization.png" alt="">
+        </section>
+        <section>
+            <h2>Project Website Optimization for Mobile</h2>
+            <img src="./images/Mobile.png" alt="">
+        </section>
+        <section>
+            <h2>Whitepaper of the project</h2>
+            <p>The whitepaper of Masrelic project has been verified on behalf of Soken team.</p>
+            <a href="https://www.masrelic.com/assets/Masrelic-PDF_LightPaper.pdf">Whitepaper link</a>
+            <img src="./images/Whitepaper.png" alt="">
+        </section>
+        <section>
+            <h2>Vulnerabilities checking</h2>
+            <ul>
+                <li>Checking Status</li>
+                <li>Compiler Errors</li>
+                <li>Delays in Data Delivery</li>
+                <li>Re-entrancy</li>
+                <li>Transaction-Ordering Dependence</li>
+                <li>Timestamp Dependence</li>
+                <li>Shadowing State Variables</li>
+                <li>DoS with Failed Call</li>
+                <li>DoS with Block Gas Limit</li>
+                <li>Outdated Complier Version</li>
+                <li>Assert Violation</li>
+                <li>Use of Deprecated Solidity Functions</li>
+                <li>Integer Overflow and Underflow</li>
+                <li>Function Default Visibility</li>
+                <li>Malicious Event Log</li>
+                <li>Math Accuracy</li>
+                <li>Design Logic</li>
+                <li>Fallback Function Security</li>
+                <li>Cross-function Race Conditions</li>
+                <li>Safe Zeppelin Module</li>
+            </ul>
+            <ul>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+                <li>Completed </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Security Issues</h2>
+            <ul>
+                <li> 
+                    <h3>Volatile Code:</h3>
+                    <p>The return values of functions swapExactTokensForETHSupportingFeeOnTransferTokens and addLiquidityETH are not properly handled. </p>
+                    <h3>Recommendation:</h3>
+                    <p>We recommend using variables to receive the return value of the functions mentioned above and handle both success and failure cases if needed by the business logic.</p>
+                </li>
+                <li>
+                    <h3>Out of Gas issue:</h3>
+                    <img src="./images/Gas-issue.png" alt="">
+                    <p>The function includeInRewards() uses the loop to find and remove
+                        addresses from the _excluded list. Function will be aborted with
+                        OUT_OF_GAS exception if there will be a long excluded addresses list.
+                    </p>
+                </li>
+                <li>
+                    <h3>Out of Gas issue:</h3>
+                    <img src="./images/Gas-ssue2.png" alt="">
+                </li>
+            </ul>
+            <p>The function _getCurrentSupply also uses the loop for evaluating total
+                supply. It also could be aborted with OUT_OF_GAS exception if there
+                will be a long excluded addresses list.
+            </p>
+            <h3>Recommendation: </h3>
+            <p>Use EnumerableSet instead of array or do not use long arrays.</p>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+            <p>Low-severity issues exist within smart contracts. Smart contracts are free from any critical or high-severity issues.</p>
+            <p>NOTE: Please check the disclaimer above and note, that audit makes no statements or warranties on business model, investment attractiveness or code sustainability. </p>
+
+        </section>
+    </main>
+  
+        
+  
+       
+    
+   
+    
+</body>
+</html>
