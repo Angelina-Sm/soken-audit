@@ -114,7 +114,6 @@ img {
 
 .hero {
   background-color: #1b2360;
-  padding-bottom: 20px;
 }
 
 .hero__container {
@@ -124,7 +123,7 @@ img {
 .hero-part1__title {
   padding-left: 20px;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.4;
   letter-spacing: 0.03em;
   color: white;
@@ -132,7 +131,7 @@ img {
 
 .hero-part2__title {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.4;
   letter-spacing: 0.03em;
   color: aqua;
@@ -140,7 +139,7 @@ img {
 
 .hero-projekt__name {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.4;
   letter-spacing: 0.03em;
   color: white;
@@ -159,8 +158,8 @@ img {
 }
 
 .hero-github__qr {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -268,6 +267,14 @@ img {
   padding-left: 20px;
 }
 
+.recommendation__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  word-break: break-all;
+}
+
 .detals__data {
   font-weight: 600;
   font-size: 14px;
@@ -294,4 +301,43 @@ img {
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
+}
+
+.social-list__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  word-break: break-all;
+}
+
+.social-list__item {
+  margin-top: 5px;
+}
+
+.token-analytics__img {
+  width: auto;
+  height: auto;
+}
+
+.token-analytics__title {
+  margin-bottom: 20px;
+}
+
+.token-distribution__title {
+  margin-bottom: 20px;
+}
+
+.token-distribution__img {
+  width: auto;
+  height: auto;
+}
+
+.holders__title {
+  margin-bottom: 20px;
+}
+
+.holders__img {
+  width: auto;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
