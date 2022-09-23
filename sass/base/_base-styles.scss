@@ -32,11 +32,13 @@ img {
     list-style: none;
 }
 .title {
-    font-weight: 600;
+    font-weight: 900;
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 20px;
+    color: #c20028;
 }
 .subtitle {
     font-weight: 400;
@@ -50,6 +52,22 @@ img {
     line-height: 1.4;
     letter-spacing: 0.03em;
     margin-top: 10px;
+}
+
+.pub {
+    color: #2fb41e;
+}
+
+.function__int {
+    color: #757575;
+}
+
+.ext {
+    color: #400cd9;
+}
+
+.prv {
+    color: #c20028;
 }
 
 .container {

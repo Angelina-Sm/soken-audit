@@ -75,7 +75,7 @@
                     This is a comprehensive report based on our automated and manual examination of cybersecurity vulnerabilities and framework flaws. We took into consideration smart contract based algorithms, as well.  Reading the full analysis report is essential to build your understanding of project’s security level. It is crucial to take note, though we have done our best to perform this analysis and report, that you should not rely on the our research and cannot claim what it states or how we created it. Before making any judgments, you have to conduct your own independent research.  We will discuss this in more depth in the following disclaimer - please read it fully. 
                 </p>
                 <p class="disclaimer__text">
-                    DISCLAIMER: You agree to the terms of this disclaimer by reading this report or any portion thereof. Please stop reading this report and remove and delete any copies of this report that you download and/or print if you do not agree to these conditions. This report is for non-reliability information only and does not represent investment advice. No one shall be entitled to depend on the report or its contents, and Soken and its affiliates shall not be held responsible to you or anyone else, nor shall Soken provide any guarantee or representation to any person with regard to the accuracy or integrity of the report. Without any terms, warranties or other conditions other than as set forth in that exclusion and Soken excludes hereby all representations, warrants, conditions and other terms (including, without limitation, guarantees implied by the law of satisfactory quality, fitness for purposes and the use of reasonable care and skills). The report is provided as "as is" and does not contain any terms and conditions. Except as legally banned, Soken disclaims all responsibility and responsibilities and no claim against Soken is made to any amount or type of loss or damages (without limitation, direct, indirect, special, punitive, consequential or pure economic loses or losses) that may be caused by you or any other person, or any damages or damages, including without limitations (whether innocent or negligent).
+                    <span> DISCLAIMER:</span> You agree to the terms of this disclaimer by reading this report or any portion thereof. Please stop reading this report and remove and delete any copies of this report that you download and/or print if you do not agree to these conditions. This report is for non-reliability information only and does not represent investment advice. No one shall be entitled to depend on the report or its contents, and Soken and its affiliates shall not be held responsible to you or anyone else, nor shall Soken provide any guarantee or representation to any person with regard to the accuracy or integrity of the report. Without any terms, warranties or other conditions other than as set forth in that exclusion and Soken excludes hereby all representations, warrants, conditions and other terms (including, without limitation, guarantees implied by the law of satisfactory quality, fitness for purposes and the use of reasonable care and skills). The report is provided as "as is" and does not contain any terms and conditions. Except as legally banned, Soken disclaims all responsibility and responsibilities and no claim against Soken is made to any amount or type of loss or damages (without limitation, direct, indirect, special, punitive, consequential or pure economic loses or losses) that may be caused by you or any other person, or any damages or damages, including without limitations (whether innocent or negligent).
                 </p>
                 <p class="disclaimer__text">
                     Security analysis is based only on the smart contracts. No applications or operations were reviewed for security. No product code has been reviewed.
@@ -230,14 +230,60 @@
                 <img class="website-certification__img" src="./images/SSL-Certification.png" alt="">
             </div>
         </section>
-        <!-- <section class="">
-            <h2>Project Website Optimization for Desktop</h2>
-            <img src="./images/Website-Optimization.png" alt="">
-        </section> -->
-        <!-- <section>
-            <h2>Project Website Optimization for Mobile</h2>
-            <img src="./images/Mobile.png" alt="">
-        </section> -->
+        <section class="website-desktop section">
+            <div class="container">
+                <h2 class="website-desktop__title title">Project Website Optimization for Desktop</h2>
+                <img class="website-desktop__img" src="./images/Website-Optimization.png" alt="">
+            </div>
+        </section>
+        <section class="website-desktop__mob section">
+            <div class="container">
+                <h2 class="website-desktop__title title">Project Website Optimization for Mobile</h2>
+                <img class="website-desktop__img" src="./images/Mobile.png" alt="">
+            </div>
+        </section>
+        <section class="function section">
+            <div class="container">
+                <h2 class="function__title title">Contract Function Details</h2>
+                <ul class="function__list">
+                    <li class="function__item"> <span class="function__int int">[Int]</span> _msgSender</li>
+                    <li class="function__item"><span class="function__int int">[Int]</span> _msgData</li>
+                    <li class="function__item"><span class="function__pub pub">[Pub]</span> owner</li>
+                    <li class="function__item"><span class="function__pub pub">[Pub]</span> renounceOwnership</li>
+                    <li class="function__item"><span class="function__pub pub">[Pub]</span> transferOwnership</li>
+                    <li class="function__item"><span class="function__int int">[Int]</span> _transferOwnership</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span> totalSupply</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>decimals</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>symbol</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>name</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>getOwner</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>balanceOf</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>transfer</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>allowance</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>approve</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>transferFrom</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>add</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>sub</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>sub</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>mul</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>div</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>div</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>mod</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>mod</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>min</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>sqrt</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>isContract</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>sendValue</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>functionCall</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>functionCall</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>functionCallWithValue</li>
+                    <li class="function__item"> <span class="function__int int">[Int]</span>functionCallWithValue</li>
+                    <li class="function__item"><span class="function__prv prv">[Prv]</span>_functionCallWithValue</li>
+                    <li class="function__item"><span class="function__ext ext">[Ext]</span>getOwner</li>
+                    
+                </ul>
+            </div>
+        </section>
         <!-- <section>
             <h2>Whitepaper of the project</h2>
             <p>The whitepaper of Masrelic project has been verified on behalf of Soken team.</p>
